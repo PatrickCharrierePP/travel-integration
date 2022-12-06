@@ -8,6 +8,7 @@ import { TopBarComponent } from './top-bar/top-bar.component';
 import { PlaceholderComponent } from './placeholder/placeholder.component';
 import { ProductComponent } from './product/product.component';
 import { ProductListComponent } from './product-list/product-list.component';
+import { CheckoutComponent } from './checkout/checkout.component';
 
 @NgModule({
   imports: [
@@ -21,6 +22,7 @@ import { ProductListComponent } from './product-list/product-list.component';
     PlaceholderComponent,
     ProductComponent,
     ProductListComponent,
+    CheckoutComponent,
   ],
   bootstrap: [AppComponent],
 })
