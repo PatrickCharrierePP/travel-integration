@@ -24,7 +24,7 @@ export const products = [
     id: 2,
     name: 'Deluxe simple loft',
     price: 449,
-    description: '1 Double bedroom in a loft environment with view',
+    description: 'A double bedroom in a loft environment with view',
     img: {
       src: 'https://media-cdn.tripadvisor.com/media/photo-s/1c/d7/6e/56/interior-view-of-lounge.jpg',
     },
@@ -33,7 +33,7 @@ export const products = [
     id: 3,
     name: 'Deluxe double loft',
     price: 499,
-    description: '2 Double bedroom in a loft environment with ocean view',
+    description: '2 double bedroom in a loft environment with ocean view',
     img: {
       src: 'https://cdn.concreteplayground.com/content/uploads/2022/04/bondi-view_airbnb-1-1920x1080.jpg',
     },

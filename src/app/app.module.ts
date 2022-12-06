@@ -5,6 +5,7 @@ import { ReactiveFormsModule } from '@angular/forms';
 
 import { AppComponent } from './app.component';
 import { TopBarComponent } from './top-bar/top-bar.component';
+import { PlaceholderComponent } from './placeholder/placeholder.component';
 import { ProductComponent } from './product/product.component';
 import { ProductListComponent } from './product-list/product-list.component';
 
@@ -17,10 +18,10 @@ import { ProductListComponent } from './product-list/product-list.component';
   declarations: [
     AppComponent,
     TopBarComponent,
+    PlaceholderComponent,
     ProductComponent,
     ProductListComponent,
   ],
   bootstrap: [AppComponent],
 })
 export class AppModule {}
-

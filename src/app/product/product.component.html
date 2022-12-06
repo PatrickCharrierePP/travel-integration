@@ -1,11 +1,45 @@
 <div class="product-container">
-  <img class="product-img" [src]="product.img.src" [alt]="product.name" />
+  <div class="product-img-container">
+    <div
+      class="product-img"
+      [style.background-image]="'url(' + product.img.src + ')'"
+    ></div>
+  </div>
 
   <div class="product-description-container">
     <div class="product-title">
       {{ product.name }}
     </div>
 
-    <p *ngIf="product.description">Description: {{ product.description }}</p>
+    <div class="product-features">
+      <app-placeholder></app-placeholder>
+      <app-placeholder></app-placeholder>
+      <app-placeholder></app-placeholder>
+      <app-placeholder></app-placeholder>
+    </div>
+
+    <div class="product-description">
+      <p *ngIf="product.description">{{ product.description }}</p>
+    </div>
+
+    <div class="product-informations">
+      <div class="product-extras">
+        <app-placeholder></app-placeholder>
+        <app-placeholder></app-placeholder>
+        <app-placeholder></app-placeholder>
+        <app-placeholder></app-placeholder>
+        <app-placeholder></app-placeholder>
+        <app-placeholder></app-placeholder>
+      </div>
+
+      <div class="product-actions">
+        <div class="product-price">
+          <span class="currency-tag">A$</span>
+          <span class="price-tag">{{ product.price }}</span>
+          <span class="per-night">/NIGHT</span>
+        </div>
+        <div class="book-button">BOOK NOW</div>
+      </div>
+    </div>
   </div>
 </div>

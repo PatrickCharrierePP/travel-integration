@@ -7,7 +7,27 @@
   background-color: white;
 }
 
+.product-img-container {
+  overflow: hidden;
+  position: relative;
+  width: 25%;
+}
+
+.product-img {
+  display: block;
+  width: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  height: 100%;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
 .product-description-container {
+  width: 75%;
   padding: 30px;
   display: flex;
   flex-direction: column;
@@ -18,6 +38,52 @@
   font-weight: 800;
 }
 
-.product-img {
-  max-width: 300px;
+.product-features {
+  display: flex;
+  justify-content: space-between;
+}
+
+.product-features > * {
+  width: 60px;
+  margin: 5px;
+  overflow: hidden;
+}
+
+.product-extras > * {
+  display: block;
+  margin: 5px 0 0 0;
+  width: 150px;
+}
+
+.product-informations {
+  display: flex;
+  justify-content: space-between;
+}
+
+.product-actions {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: flex-end;
+}
+
+.currency-tag {
+  vertical-align: top;
+}
+
+.price-tag {
+  font-size: xx-large;
+  font-weight: 900;
+}
+
+.per-night {
+  font-size: small;
+}
+
+.book-button {
+  padding: 8px 20px;
+  margin: 10px 0;
+  color: white;
+  background-color: #096281;
+  cursor: pointer;
 }
