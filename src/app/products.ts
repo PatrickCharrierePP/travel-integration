@@ -15,7 +15,8 @@ export const products = [
     id: 1,
     name: 'Deluxe double room',
     price: 299,
-    description: 'A large bedroom with one of the best view over the city',
+    description:
+      'A large bedroom with one of the best view over the city - 25m2 - desk - free wifi - non-smoking room',
     img: {
       src: 'https://danaberez.com/wp-content/uploads/2019/01/Where-to-Stay-in-NYC-Hotel-Indigo-Lower-East-Side.jpg',
     },
@@ -24,7 +25,8 @@ export const products = [
     id: 2,
     name: 'Deluxe simple loft',
     price: 449,
-    description: 'A double bedroom in a loft environment with view',
+    description:
+      'A double bedroom in a loft environment with view - 35-40m2 - mini-bar - free wifi - non-smoking loft',
     img: {
       src: 'https://media-cdn.tripadvisor.com/media/photo-s/1c/d7/6e/56/interior-view-of-lounge.jpg',
     },
@@ -33,7 +35,8 @@ export const products = [
     id: 3,
     name: 'Deluxe double loft',
     price: 499,
-    description: '2 double bedroom in a loft environment with ocean view',
+    description:
+      '2 double bedroom in a loft environment with ocean view - 60m2 - free wifi - non-smoking room',
     img: {
       src: 'https://cdn.concreteplayground.com/content/uploads/2022/04/bondi-view_airbnb-1-1920x1080.jpg',
     },

@@ -1,5 +1,3 @@
-/* Global Styles */
-
 * {
   font-family: 'Roboto', Arial, sans-serif;
   color: #616161;
@@ -22,7 +20,6 @@ router-outlet + * {
 }
 
 /* Text */
-
 h1 {
   font-size: 32px;
 }
@@ -33,83 +30,14 @@ h2 {
 
 h1,
 h2 {
-  font-weight: lighter;
+  font-weight: 400;
 }
 
 p {
   font-size: 14px;
 }
 
-/* Hyperlink */
-
-a {
-  cursor: pointer;
-  color: #096281;
-  text-decoration: none;
-}
-
-a:hover {
-  opacity: 0.8;
-}
-
-/* Input */
-
-input {
-  font-size: 14px;
-  border-radius: 2px;
-  padding: 8px;
-  margin-bottom: 16px;
-  border: 1px solid #bdbdbd;
-}
-
-label {
-  font-size: 12px;
-  font-weight: bold;
-  margin-bottom: 4px;
-  display: block;
-  text-transform: uppercase;
-}
-
-/* Button */
-.button,
-button {
-  display: inline-flex;
-  align-items: center;
-  padding: 8px 16px;
-  border-radius: 2px;
-  font-size: 14px;
-  cursor: pointer;
-  background-color: #096281;
-  color: white;
-  border: none;
-}
-
-.button:hover,
-button:hover {
-  opacity: 0.8;
-  font-weight: normal;
-}
-
-.button:disabled,
-button:disabled {
-  opacity: 0.5;
-  cursor: auto;
-}
-
-/* Fancy Button */
-
-.fancy-button {
-  background-color: white;
-  color: #096281;
-}
-
-.fancy-button i.material-icons {
-  color: #096281;
-  padding-right: 4px;
-}
-
 /* Top Bar */
-
 app-top-bar {
   width: 100%;
   height: 68px;
@@ -126,24 +54,6 @@ app-top-bar h1 {
   margin: 0;
 }
 
-/* Checkout Cart, Shipping Prices */
-
-.cart-item,
-.shipping-item {
-  width: 100%;
-  min-width: 400px;
-  max-width: 450px;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  padding: 16px 32px;
-  margin-bottom: 8px;
-  border-radius: 2px;
-  background-color: #eeeeee;
+app-top-bar a {
+  text-decoration: none;
 }
-
-/*
-Copyright Google LLC. All Rights Reserved.
-Use of this source code is governed by an MIT-style license that
-can be found in the LICENSE file at https://angular.io/license
-*/
