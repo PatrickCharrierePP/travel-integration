@@ -12,6 +12,10 @@ import { CheckoutComponent } from './checkout/checkout.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatIconModule } from '@angular/material/icon';
 import { MatButtonModule } from '@angular/material/button';
+import { MatExpansionModule } from '@angular/material/expansion';
+import { NgCreditCardModule } from 'angular-credit-card';
+import { MatFormFieldModule } from '@angular/material/form-field';
+import { MatInputModule } from '@angular/material/input';
 
 const routes: Routes = [
   { path: 'home', component: CheckoutComponent },
@@ -28,6 +32,10 @@ const routes: Routes = [
     BrowserAnimationsModule,
     MatButtonModule,
     MatIconModule,
+    MatExpansionModule,
+    NgCreditCardModule,
+    MatFormFieldModule,
+    MatInputModule,
   ],
   declarations: [
     AppComponent,

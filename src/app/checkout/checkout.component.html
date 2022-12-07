@@ -1,1 +1,66 @@
 <h1>Checkout</h1>
+
+<mat-accordion>
+  <mat-expansion-panel hideToggle>
+    <mat-expansion-panel-header>
+      <mat-panel-title> Pay in full</mat-panel-title>
+      <mat-panel-description> Credit card options </mat-panel-description>
+    </mat-expansion-panel-header>
+
+    <div class="credit-card">
+      <form class="credit-card-form" [formGroup]="form">
+        <mat-form-field class="example-full-width">
+          <mat-label>{{ credit_card.name }}</mat-label>
+          <input
+            matInput
+            name="name"
+            formControlName="name"
+            [(ngModel)]="credit_card.name"
+          />
+        </mat-form-field>
+        <mat-form-field class="example-full-width">
+          <mat-label>{{ credit_card.number }}</mat-label>
+          <input
+            matInput
+            number="number"
+            formControlName="number"
+            [(ngModel)]="credit_card.number"
+          />
+        </mat-form-field>
+        <mat-form-field class="example-full-width">
+          <mat-label>{{ credit_card.expiry }}</mat-label>
+          <input
+            matInput
+            expiry="expiry"
+            formControlName="expiry"
+            [(ngModel)]="credit_card.expiry"
+          />
+        </mat-form-field>
+        <mat-form-field class="example-full-width">
+          <mat-label>{{ credit_card.cvv }}</mat-label>
+          <input
+            matInput
+            cvv="cvv"
+            formControlName="cvv"
+            [(ngModel)]="credit_card.cvv"
+          />
+        </mat-form-field>
+      </form>
+
+      <ng-credit-card
+        [name]="credit_card.name"
+        [number]="credit_card.number"
+        [cvc]="credit_card.cvv"
+        [expiry]="credit_card.expiry"
+      ></ng-credit-card>
+    </div>
+  </mat-expansion-panel>
+
+  <mat-expansion-panel hideToggle>
+    <mat-expansion-panel-header>
+      <mat-panel-title> Pay in instalments</mat-panel-title>
+      <mat-panel-description> Planpay </mat-panel-description>
+    </mat-expansion-panel-header>
+    <p>This is the primary content of the panel.</p>
+  </mat-expansion-panel>
+</mat-accordion>
