@@ -1,8 +1,33 @@
 .credit-card {
   display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.credit-card > * {
+  width: 300px;
 }
 
 .credit-card-form {
   display: flex;
   flex-direction: column;
+}
+
+.aligner {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+.aligner-item {
+ max-width: 50%;
+}
+
+.planpay-checkout-widget {
+  max-width: 600px;
+  min-width: 300px;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
 }

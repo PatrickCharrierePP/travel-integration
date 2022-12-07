@@ -10,7 +10,7 @@
     <div class="credit-card">
       <form class="credit-card-form" [formGroup]="form">
         <mat-form-field class="example-full-width">
-          <mat-label>{{ credit_card.name }}</mat-label>
+          <mat-label>Cardholder</mat-label>
           <input
             matInput
             name="name"
@@ -19,7 +19,7 @@
           />
         </mat-form-field>
         <mat-form-field class="example-full-width">
-          <mat-label>{{ credit_card.number }}</mat-label>
+          <mat-label>Card number</mat-label>
           <input
             matInput
             number="number"
@@ -28,7 +28,7 @@
           />
         </mat-form-field>
         <mat-form-field class="example-full-width">
-          <mat-label>{{ credit_card.expiry }}</mat-label>
+          <mat-label>Expiry</mat-label>
           <input
             matInput
             expiry="expiry"
@@ -36,8 +36,11 @@
             [(ngModel)]="credit_card.expiry"
           />
         </mat-form-field>
-        <mat-form-field class="example-full-width">
-          <mat-label>{{ credit_card.cvv }}</mat-label>
+        <mat-form-field
+          class="example-full-width"
+          style="margin-bottom: -1.25em"
+        >
+          <mat-label>CVV</mat-label>
           <input
             matInput
             cvv="cvv"
@@ -61,6 +64,18 @@
       <mat-panel-title> Pay in instalments</mat-panel-title>
       <mat-panel-description> Planpay </mat-panel-description>
     </mat-expansion-panel-header>
-    <p>This is the primary content of the panel.</p>
+
+    <div id="wrapper">
+      <div class="aligner">
+        <div
+          data-planpay-checkout-id="6e647a93-8b49-46b0-b1bc-2c4759a8a97d"
+          class="aligner-item planpay-checkout-widget"
+        >
+          Loading planpay&hellip;
+        </div>
+      </div>
+
+      <script src="https://sdk-app.sbx.planpaytech.com/planpay-sdk.js"></script>
+    </div>
   </mat-expansion-panel>
 </mat-accordion>
