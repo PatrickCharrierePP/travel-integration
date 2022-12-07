@@ -79,12 +79,3 @@
 .per-night {
   font-size: small;
 }
-
-.book-button {
-  padding: 10px 20px;
-  margin: 10px 0 0 0;
-  color: white;
-  background-color: #096281;
-  cursor: pointer;
-  font-weight: 500;
-}

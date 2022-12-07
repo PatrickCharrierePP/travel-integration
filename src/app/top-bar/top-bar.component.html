@@ -1,3 +1,35 @@
-<a [routerLink]="['/']">
+<a [routerLink]="['/home']">
   <h1>Online Travel Agency</h1>
 </a>
+
+<div class="nav-menu">
+  <button
+    mat-icon-button
+    class="example-icon"
+    color="primary"
+    aria-label="Example icon-button with menu icon"
+    routerLink="/product-list"
+  >
+    <mat-icon>view_list</mat-icon>
+  </button>
+
+  <button
+    mat-icon-button
+    class="example-icon"
+    color="primary"
+    aria-label="Example icon-button with menu icon"
+    routerLink="/checkout"
+  >
+    <mat-icon>shopping_cart</mat-icon>
+  </button>
+
+  <button
+    mat-icon-button
+    class="example-icon"
+    color="primary"
+    aria-label="Example icon-button with menu icon"
+    routerLink="/home"
+  >
+    <mat-icon>home</mat-icon>
+  </button>
+</div>
