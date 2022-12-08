@@ -7,6 +7,7 @@ import { AppComponent } from './app.component';
 import { TopBarComponent } from './top-bar/top-bar.component';
 import { PlaceholderComponent } from './placeholder/placeholder.component';
 import { ProductComponent } from './product/product.component';
+import { WindowRef } from './product/WindowRef';
 import { ProductListComponent } from './product-list/product-list.component';
 import { CheckoutComponent } from './checkout/checkout.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
@@ -37,6 +38,7 @@ const routes: Routes = [
     MatFormFieldModule,
     MatInputModule,
   ],
+  providers: [WindowRef],
   declarations: [
     AppComponent,
     TopBarComponent,
