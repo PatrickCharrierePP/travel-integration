@@ -3,11 +3,12 @@
   "version": "0.0.0",
   "description": "Example project from an angular.io guide.",
   "license": "MIT",
+  "type": "module",
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
     "build": "ng build",
-    "watch": "ng build --watch --configuration development",
+    "watch": "ng serve --watch --configuration development",
     "test": "ng test",
     "e2e": "ng e2e"
   },
